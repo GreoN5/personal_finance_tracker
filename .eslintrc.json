@@ -12,7 +12,8 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "simple-import-sort"
   ],
   "rules": {
     "no-restricted-imports": "off",

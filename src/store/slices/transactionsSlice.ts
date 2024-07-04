@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import { Transaction } from "../../@types/transactions";
 import { transactions } from "../../mock/mockData";
 

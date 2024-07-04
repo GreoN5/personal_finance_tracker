@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
-import { Box, Flex, Heading, Link } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
+import { Box, Flex, Heading, Link } from "@chakra-ui/react";
 
 const Header = (): JSX.Element => {
   return (

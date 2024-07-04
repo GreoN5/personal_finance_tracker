@@ -1,8 +1,9 @@
 import React, { JSX, useState } from "react";
 import { Box, Button, FormControl, FormLabel, Input, Select } from "@chakra-ui/react";
+
 import { Transaction, TransactionType } from "../../../@types/transactions";
-import { addTransaction } from "../../../store/slices/transactionsSlice";
 import { useAppDispatch } from "../../../store/hooks";
+import { addTransaction } from "../../../store/slices/transactionsSlice";
 
 const TransactionForm = (): JSX.Element => {
   const [description, setDescription] = useState("");

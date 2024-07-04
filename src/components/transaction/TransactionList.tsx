@@ -1,7 +1,9 @@
-import { Box, Button, List, ListItem, Text } from "@chakra-ui/react";
 import React, { FC, useState } from "react";
-import { useAppSelector } from "../../store/hooks";
+import { Box, Button, List, ListItem, Text } from "@chakra-ui/react";
+
 import { RootState } from "../../store";
+import { useAppSelector } from "../../store/hooks";
+
 import { TransactionDetail } from "./";
 
 const TransactionList: FC = () => {

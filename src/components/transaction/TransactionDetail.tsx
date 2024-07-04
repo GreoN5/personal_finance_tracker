@@ -1,6 +1,7 @@
-import { Box, Button, Text } from "@chakra-ui/react";
-import { Transaction } from "../../@types/transactions";
 import React, { FC } from "react";
+import { Box, Button, Text } from "@chakra-ui/react";
+
+import { Transaction } from "../../@types/transactions";
 
 interface TransactionDetailsProps {
   transaction: Transaction;

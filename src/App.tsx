@@ -1,8 +1,10 @@
 import { FC } from "react";
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
+
 import Dashboard from "./pages/dashboard";
 import Transactions from "./pages/transactions";
+
+import "./App.css";
 
 const App: FC = () => {
 

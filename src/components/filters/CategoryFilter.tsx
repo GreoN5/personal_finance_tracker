@@ -1,5 +1,6 @@
 import React, { ChangeEvent, FC } from "react";
 import { Select } from "@chakra-ui/react";
+
 import { useAppDispatch } from "../../store/hooks";
 import { setFilterCategory } from "../../store/slices/transactionsSlice";
 
