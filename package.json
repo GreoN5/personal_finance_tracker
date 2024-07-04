@@ -9,7 +9,8 @@
     "build": "tsc -b && vite build",
     "eslint": "eslint --ext .jsx,.js,.ts,.tsx src --max-warnings 999 --cache",
     "eslint:fix": "eslint --ext .ts,.tsx src --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
