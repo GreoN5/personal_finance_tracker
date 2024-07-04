@@ -58,7 +58,7 @@
     "src/**/*.{ts,tsx}": [
       "eslint --fix"
     ],
-    "__test__/**/*.{ts,tsx}": [
+    "__test__/**/*.test.{ts,tsx}": [
       "eslint --fix"
     ]
   }
