@@ -57,9 +57,6 @@
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "eslint --fix"
-    ],
-    "__test__/**/*.test.{ts,tsx}": [
-      "eslint --fix"
     ]
   }
 }
