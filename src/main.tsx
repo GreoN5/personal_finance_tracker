@@ -6,13 +6,12 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 import App from "./App";
 import { store } from "./store";
-
-import "./index.css";
+import theme from "./theme";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <BrowserRouter>
           <App />
         </BrowserRouter>

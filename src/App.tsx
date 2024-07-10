@@ -1,17 +1,30 @@
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 
+import Main from "./components/layout/Main";
 import Dashboard from "./pages/dashboard";
 import Transactions from "./pages/transactions";
-
-import "./App.css";
 
 const App: FC = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />} />
-      <Route path="/transactions" element={<Transactions />} />
+      <Route
+        path="/"
+        element={
+          <Main>
+            <Dashboard />
+          </Main>
+        }
+      />
+      <Route
+        path="/transactions"
+        element={
+          <Main>
+            <Transactions />
+          </Main>
+        }
+      />
     </Routes>
   );
 };

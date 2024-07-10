@@ -9,5 +9,12 @@ export interface Transaction {
   amount: number;
   type: TransactionType;
   category: string;
-  date: string;
+  date?: string;
+}
+
+export interface TransactionAddEditType {
+  description: string;
+  amount: number;
+  type: TransactionType;
+  category: string;
 }

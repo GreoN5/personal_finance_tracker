@@ -1,6 +1,7 @@
 import React, { ChangeEvent, FC } from "react";
 import { Select } from "@chakra-ui/react";
 
+import { categories } from "../../mock/mockData";
 import { useAppDispatch } from "../../store/hooks";
 import { setFilterCategory } from "../../store/slices/transactionsSlice";
 
@@ -13,8 +14,9 @@ const CategoryFilter: FC = () => {
 
   return (
     <Select placeholder="Filter by category" onChange={handleChange} mt={4} mb={4}>
-      <option value="Salary">Salary</option>
-      <option value="Food">Food</option>
+      {categories.map((category, index) => (
+        <option key={`${category}-${index}`} value={category}>{category}</option>
+      ))}
     </Select>
   );
 };

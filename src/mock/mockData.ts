@@ -17,5 +17,13 @@ export const transactions = [
     category: "Food",
     date: "2023-01-12",
   },
-  // Add more transactions as needed
+];
+
+
+export const categories = [
+  "Salary",
+  "Food",
+  "Eat out",
+  "Fuel",
+  "Gym",
 ];
