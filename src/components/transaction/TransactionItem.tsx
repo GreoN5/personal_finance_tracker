@@ -4,7 +4,7 @@ import { Button, Flex, ListItem, Text, useToast } from "@chakra-ui/react";
 import { Transaction } from "../../@types/transactions";
 import { useAppDispatch } from "../../store/hooks";
 import { deleteTransaction } from "../../store/slices/transactionsSlice";
-import TransactionFormModal from "../form/transaction/EditTransactionForm";
+import { EditTransactionFormModal } from "../form/transaction";
 import { TransactionDetailsModal } from "../modals";
 
 type Props = {
@@ -60,7 +60,7 @@ const TransactionItem: FC<Props> = ({ transaction, readonly }) => {
         onClose={handleCloseModals}
         transaction={transaction}
       />
-      <TransactionFormModal
+      <EditTransactionFormModal
         isOpen={isEditModalOpen}
         onClose={handleCloseModals}
         transaction={transaction}

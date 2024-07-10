@@ -1,17 +1,24 @@
-import "@testing-library/jest-dom";
 import React from "react";
-import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import { store } from "../src/store";
+import { render } from "@testing-library/react";
+
+import "@testing-library/jest-dom";
+
 import { Summary } from "../src/components/common";
+import { store } from "../src/store";
 
 test("renders total income", () => {
-  render(
+  const { getByText } = render(
     <Provider store={store}>
       <Summary />
     </Provider>,
   );
 
-  const incomeElement = screen.getByText(/Total Income/i);
-  expect(incomeElement).toBeInTheDocument();
+  expect(getByText("Summary")).toBeInTheDocument();
+  expect(getByText("Total Income")).toBeInTheDocument();
+  expect(getByText("5000.00lv")).toBeInTheDocument();
+  expect(getByText("Total Expenses")).toBeInTheDocument();
+  expect(getByText("200.00lv")).toBeInTheDocument();
+  expect(getByText("Balance")).toBeInTheDocument();
+  expect(getByText("4800.00lv")).toBeInTheDocument();
 });
